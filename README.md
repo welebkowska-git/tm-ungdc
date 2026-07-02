@@ -13,7 +13,7 @@ The project starts by loading UN General Debate speeches and converting filename
 ├── tm-project.ipynb          # Main analysis notebook
 ├── README.md                 # Project description and usage notes
 ├── .gitignore                # Files excluded from version control
-└── dataverse/                # Local UNGDC data directory, not recommended for GitHub
+└── dataverse/                # Local UNGDC data directory, downloaded separately from Harvard Dataverse
 ```
 
 ## Data
