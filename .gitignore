@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem
+
+# Local data and large archives
+dataverse/
+data/
+raw/
+outputs/
+figures/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.pdf
+*.PDF
+
+# Generated intermediate analysis files
+*.pickle
+*.pkl
+*.joblib
