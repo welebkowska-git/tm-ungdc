@@ -18,14 +18,16 @@ The project starts by loading UN General Debate speeches and converting filename
 
 ## Data
 
-The analysis uses the United Nations General Debate Corpus (UNGDC), version covering 1946-2024. The local data directory used by the notebook is expected to contain:
+The analysis uses the United Nations General Debate Corpus (UNGDC), a publicly available corpus of speeches delivered during the annual United Nations General Debate. The dataset is available through Harvard Dataverse:
+
+Jankin, Slava; Baturo, Alexander; Dasandi, Niheer, 2017, "United Nations General Debate Corpus 1946-2025", https://doi.org/10.7910/DVN/0TJX8Y, Harvard Dataverse, V14
+
+The notebook expects the data to be stored locally in the following structure:
 
 ```text
 dataverse/dataverse/UN General Debate Corpus/TXT/
 dataverse/dataverse/Speakers_by_session.xlsx
 ```
-
-The raw corpus files are large and should not be committed directly to GitHub. Instead, provide download instructions and citation information for the original dataset. When using the UNGDC data, cite the sources listed in `dataverse/README.txt`, including Baturo, Dasandi, and Mikhaylov (2017) and the updated UNGDC citation by Jankin, Baturo, and Dasandi.
 
 ## Methods
 
@@ -54,10 +56,9 @@ pip install pandas numpy matplotlib nltk wordcloud scikit-learn statsmodels open
 4. Open `tm-project.ipynb` in Jupyter Notebook or JupyterLab.
 5. Run the notebook from top to bottom. If NLTK resources are missing, download `punkt`, `stopwords`, `wordnet`, `punkt_tab`, and `vader_lexicon` before running the analysis.
 
-## Notes for GitHub Publishing
-
-Do not push the full `dataverse/` directory, raw PDFs, compressed archives, `.DS_Store` files, notebook checkpoints, local caches, virtual environments, or environment files. The current Git history appears to contain large data files, so cleaning the repository history may be necessary before pushing to GitHub.
 
 ## License
 
-Add a license before publishing. If the repository includes only code and notebook logic, choose a code license such as MIT. Dataset licensing and citation requirements should follow the original UNGDC source.
+The code in this repository is released under the MIT License.
+
+The underlying UN General Debate Corpus data are not included in this repository and remain subject to the terms and citation requirements of the original data source.
